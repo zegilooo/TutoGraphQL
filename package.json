@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "PORT=4000 node server.js"
+    "start": "node_modules/nodemon/bin/nodemon.js --exec 'PORT=4000 node server.js'"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "graphql": "^0.8.1",
     "lodash": "^4.17.0"
   },
-  "script": {}
+  "script": {},
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
